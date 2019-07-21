@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Luggage Storage App</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <form action="/send-location" method="post">
-        <input type="text" name="location-name" id="location-input" placeholder="City, State">
-        <button type="submit" id="location-sub-btn">Submit</button>
-    </form>
+    <div class="content-wrapper">
+        <h1 class="header">Luggage Storage Finder</h1>
+        <h3 class="sub-header">Enter your city and state that you want to store your luggage</h3>
+        <form action="/send-location" method="post" class="location-form">
+            <input type="text" name="location-name" id="location-input" placeholder="City, State">
+            <button type="submit" id="location-sub-btn">Submit</button>
+        </form>
+    </div>
 </body>
 </html>

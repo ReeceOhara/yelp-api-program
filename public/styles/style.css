@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("../img/travel-photo.jpg");
+    background-color: orange;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.content-wrapper{
+    width: 25vw;
+    height: 25vh;
+    background-color: #d6d6d6;
+    margin: auto;
+    color: #262322;;
+}
+
+.header, .sub-header{
+    text-align: center;
+}
+
+.sub-header{
+    margin-top: 5%;
+    font-size: 1em;
+}
+
+.location-form{
+    margin-top: 5%;
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#location-input{
+    font-size: 2em;
+    text-align: center;
+}
+
+#location-sub-btn{
+    font-size: 2em;
+}
