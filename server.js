@@ -43,7 +43,7 @@ app.post('/send-location', async (req, res) => {
         var business = await queryRequest();
         console.log(business);
 
-        res.render('storeView.pug', {businessName: business.name});
+        res.render('storeView.pug', {businessName: business.name, rating: business.rating, imgUrl: business.img});
     } catch (e) {
         console.log(e);
     }

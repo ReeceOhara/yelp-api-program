@@ -14,7 +14,7 @@ body{
 .content-wrapper{
     width: 25vw;
     height: 25vh;
-    background-color: #d6d6d6;
+    background-color: #f7f7f7;
     margin: auto;
     color: #262322;;
 }
@@ -42,4 +42,10 @@ body{
 
 #location-sub-btn{
     font-size: 2em;
+}
+
+.store-img{
+    width: 70%;
+    height: 85%;
+    margin-left: 15%;
 }

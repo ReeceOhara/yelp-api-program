@@ -1,5 +1,9 @@
 html
     head
         title Luggage Storage: #{businessName}
+        link(rel='stylesheet', href='./styles/style.css')
     body
-        h1=businessName
+        div.content-wrapper
+            h1.header=businessName
+            h2.sub-header=rating
+            img.store-img(src=imgUrl alt="Image of business in your area")
