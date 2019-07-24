@@ -43,7 +43,7 @@ app.post('/send-location', async (req, res) => {
         var business = await queryRequest();
         console.log(business);
 
-        res.render('storeView.pug', {businessName: business.name, rating: business.rating, imgUrl: business.img});
+        res.render('storeView.pug', {businessName: business.name, rating: business.rating, imgUrl: business.img, url: business.url});
     } catch (e) {
         console.log(e);
     }
@@ -60,7 +60,8 @@ function queryRequest(){
                 resolve({
                     name: res.jsonBody.businesses[0].name,
                     img: res.jsonBody.businesses[0].image_url,
-                    rating: res.jsonBody.businesses[0].rating
+                    rating: res.jsonBody.businesses[0].rating,
+                    url: res.jsonBody.businesses[0].url
                 });
             }).catch(e => {
                 console.log(e);

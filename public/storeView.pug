@@ -3,7 +3,8 @@ html
         title Luggage Storage: #{businessName}
         link(rel='stylesheet', href='./styles/style.css')
     body
-        div.content-wrapper
-            h1.header=businessName
-            h2.sub-header=rating
+        div.store-wrapper
+            h1.header
+                a(href=url target="_blank") #{businessName}
+            h2.sub-header Rating: #{rating} out of 5 stars
             img.store-img(src=imgUrl alt="Image of business in your area")

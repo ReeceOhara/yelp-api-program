@@ -19,8 +19,22 @@ body{
     color: #262322;;
 }
 
+.store-wrapper{
+    align-content: center;
+    width: 50vw;
+    height: 100vh;
+    background-color: #f7f7f7;
+    margin: auto;
+    color: #262322;;
+}
+
 .header, .sub-header{
     text-align: center;
+}
+
+.header a{
+    text-decoration: none;
+    color: #262322;
 }
 
 .sub-header{
@@ -45,7 +59,7 @@ body{
 }
 
 .store-img{
-    width: 70%;
-    height: 85%;
-    margin-left: 15%;
+    width: 80%;
+    height: 60%;
+    margin-left: 10%;
 }
