@@ -1,14 +1,14 @@
 html
     head
-        title Luggage Storage: #{businessName}
+        title Luggage Storage: #{location}
         link(rel='stylesheet', href='./styles/style.css')
-    body
+    body.store-list-body
         div.store-wrapper
-            h1.header Something HERE
+            h1.header Searching for Lugguage Storage in #{location}
             a.nav-link(href='/') Home
             div.store-list
                 each object in businessList
                     each business in object
-                        h3 
+                        h3.store-title 
                             a(href=business.url) #{business.name}
                         img(src=business.image_url, alt="Business' image", width=200, height=200)

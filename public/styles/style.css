@@ -1,22 +1,33 @@
+/*Clearing any previous styling */
 * {
     padding: 0;
     margin: 0;
 }
 
+/*Applies to both pages (index and storeListView) */
+
 body{
+    height: 100%;
+    width: 100%;background-color: orange;
     background-image: url("../img/travel-photo.jpg");
-    background-color: orange;
     background-position: center;
     background-repeat: repeat-y;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .content-wrapper{
     width: 25vw;
-    height: 25vh;
+    height: 50%;
     background-color: #f7f7f7;
     margin: auto;
-    color: #262322;;
+    color: #262322;
+    padding-bottom: 3%;
+}
+
+/*Basically the content wrapper for the storeListView page */
+.store-list-body{
+    background-repeat: repeat-y;
 }
 
 .store-wrapper{
@@ -32,6 +43,10 @@ body{
     text-align: center;
 }
 
+.header{
+    padding-bottom: 3%;
+}
+
 .header a{
     text-decoration: none;
     color: #262322;
@@ -42,6 +57,7 @@ body{
     font-size: 1em;
 }
 
+/*Styles the button the user can press to take them back to index */
 .nav-link{
     color: #262322;
     text-decoration: none;
@@ -55,11 +71,35 @@ body{
     color: white;
 }
 
+/*Styles the list of stores on the storeListView page */
 .store-list{
     margin-top: 5%;
     align-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
+.store-title{
+    margin-bottom: 3%;
+}
+
+.store-title a{
+    text-decoration: none;
+    color: #262322;
+}
+
+.store-title a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.store-img{
+    width: 80%;
+    height: 60%;
+    margin-left: 10%;
+}
+/*Styles the input form on index page */
 .location-form{
     margin-top: 5%;
     align-self: auto;
@@ -76,8 +116,29 @@ body{
     font-size: 2em;
 }
 
-.store-img{
-    width: 80%;
-    height: 60%;
-    margin-left: 10%;
+/*Basic styling, will look better later */
+#location-sub-btn:hover{
+    color: white;
+    background-color: black;
+}
+
+/*Media Queries */
+@media screen and (max-width: 900px){
+    .location-form{
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 512px){
+    .header{
+        font-size: 1.5em;
+    }
+    
+    .sub-header{
+        font-size: 1em;
+    }
+
+    .location-form{
+        font-size: 0.5em;
+    }
 }

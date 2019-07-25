@@ -22,10 +22,10 @@ app.use(bodyParser.json());
 
 const apiKey = 'YOUR API KEY HERE';
 
-//Probably dont keep defaultSearchRequest as a global
+//Backup search in case the user doesnt enter anything
 const defaultSearchRequest = {
     term: 'Luggage Storage',
-    location: 'Cincinnati, OH'
+    location: 'Los Angeles, CA'
 };
 
 const client = yelp.client(apiKey);
@@ -43,7 +43,7 @@ app.post('/send-location', async (req, res) => {
         var business = await queryRequest();
         console.log(business);
 
-        res.render('storesListView.pug', {businessList: business});
+        res.render('storesListView.pug', {location: defaultSearchRequest['location'], businessList: business});
     } catch (e) {
         console.log(e);
     }
