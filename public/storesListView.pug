@@ -4,14 +4,11 @@ html
         link(rel='stylesheet', href='./styles/style.css')
     body
         div.store-wrapper
-            h1 Something HERE
+            h1.header Something HERE
+            a.nav-link(href='/') Home
             div.store-list
                 each object in businessList
                     each business in object
                         h3 
                             a(href=business.url) #{business.name}
-                        img(src=business.img_url, alt="Business image")
-            //- h1.header
-            //-     a(href=url target="_blank") #{businessName}
-            //- h2.sub-header Rating: #{rating} out of 5
-            //- img.store-img(src=imgUrl alt="Image of business in your area")
+                        img(src=business.image_url, alt="Business' image", width=200, height=200)

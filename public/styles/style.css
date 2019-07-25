@@ -7,7 +7,7 @@ body{
     background-image: url("../img/travel-photo.jpg");
     background-color: orange;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: 100%;
 }
 
@@ -22,7 +22,7 @@ body{
 .store-wrapper{
     align-content: center;
     width: 50vw;
-    height: 100vh;
+    height: 100%;
     background-color: #f7f7f7;
     margin: auto;
     color: #262322;;
@@ -40,6 +40,24 @@ body{
 .sub-header{
     margin-top: 5%;
     font-size: 1em;
+}
+
+.nav-link{
+    color: #262322;
+    text-decoration: none;
+    margin-left: 40%;
+    padding: 1%;
+    border: 2px solid black;
+}
+
+.nav-link:hover{
+    background-color: #262322;
+    color: white;
+}
+
+.store-list{
+    margin-top: 5%;
+    align-self: center;
 }
 
 .location-form{

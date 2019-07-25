@@ -1,0 +1,12 @@
+doctype html
+html(lang='en')
+    head
+        title Luggage Storage App
+        link(rel='stylesheet' href='./styles/style.css')
+    body
+        div.content-wrapper
+            h1.header Luggage Storage Finder
+            h3.sub-header Enter your city and state that you want to store your luggage
+            form.location-form(action="/send-location", method="post")
+                input#location-input(type="text", name="location-name", placeholder="City, State")
+                button#location-sub-btn(type="submit") Submit

@@ -31,7 +31,7 @@ const defaultSearchRequest = {
 const client = yelp.client(apiKey);
 
 app.get('/', (req, res) => {
-    res.redirect('index.html');
+    res.render('index.pug');
 });
 
 //Getting the submit action from the html
