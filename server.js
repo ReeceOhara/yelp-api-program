@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-const apiKey = 'YOUR API KEY HERE';
+const apiKey = process.env.API_KEY;
 
 //Backup search in case the user doesnt enter anything
 const defaultSearchRequest = {
@@ -44,16 +44,6 @@ app.post('/send-location', async (req, res) => {
         
         var business = await queryRequest();
         console.log(business);
-
-        // for(let i = 0; i< business.length-1; i++){
-        //     for(let k = i+1; k < business.length; k++){
-        //         if(business[i].rating < business[k].rating){
-        //             let temp = business[i];
-        //             business[i] = business[k];
-        //             business[k] = temp;
-        //         }
-        //     }
-        // }
 
         res.render('storesListView.pug', {location: defaultSearchRequest['location'], businessList: business});
     } catch (e) {
