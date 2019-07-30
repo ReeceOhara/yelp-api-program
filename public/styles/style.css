@@ -27,13 +27,15 @@ body{
 
 /*Basically the content wrapper for the storeListView page */
 .store-list-body{
+    height: 100%;
     background-repeat: repeat-y;
 }
 
 .store-wrapper{
+    text-align: center;
     align-content: center;
     width: 50vw;
-    height: 100%;
+    height: 200vh;
     background-color: #f7f7f7;
     margin: auto;
     color: #262322;;
@@ -57,11 +59,15 @@ body{
     font-size: 1em;
 }
 
+.img-link{
+    text-align: center;
+    padding-bottom: 3%;
+}
+
 /*Styles the button the user can press to take them back to index */
 .nav-link{
     color: #262322;
     text-decoration: none;
-    margin-left: 40%;
     padding: 1%;
     border: 2px solid black;
 }

@@ -10,5 +10,7 @@ html
                 each object in businessList
                     each business in object
                         h3.store-title 
-                            a(href=business.url) #{business.name}
-                        img(src=business.image_url, alt="Business' image", width=200, height=200)
+                            a(href=business.url, target="_blank") #{business.name}
+                        a.img-link(href=business.url, target="_blank")
+                            img(src=business.image_url, alt="Business' image", width=200, height=200)
+            a.nav-link(href='/') Home
