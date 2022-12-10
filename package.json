@@ -13,7 +13,7 @@
     "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
     "ejs": "^2.6.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nodemon": "^1.19.1",
     "pug": "^2.0.4",
     "yelp-fusion": "^3.0.0"
